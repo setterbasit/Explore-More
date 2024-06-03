@@ -1,0 +1,38 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, rgba(25, 20, 20, 0.8), rgba(0, 0, 0, 0.8)), url("C:\Users\basit pc\Downloads\IMG_20220504_181831_402.jpg");
+    background-size: cover;
+    color: white;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.left-column, .right-column {
+    flex: 1;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
