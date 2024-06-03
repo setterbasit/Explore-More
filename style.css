@@ -1,4 +1,6 @@
-/* General Styles */
+/* style.css */
+
+/* General styles */
 body {
     font-family: 'Noto Sans JP', sans-serif;
     margin: 0;
@@ -13,122 +15,62 @@ body {
 .container {
     display: flex;
     flex-direction: row;
-    width:100%;
-    margin: auto;
-    background-color: rgb(193, 182, 154);
+    width: 80%;
+    background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
 }
 
-.left-column,
-.right-column {
+.left-column, .right-column {
     padding: 20px;
 }
 
 .left-column {
     flex: 1;
+    background-color: #e3f2fd;
 }
 
 .right-column {
     flex: 1;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-h1 {
-    font-family: 'Righteous', cursive;
-    font-size: 2.5em;
-    color: #ffffff;
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 1em;
-    line-height: 1.6;
-    color: #ffffff;
-}
-
-img {
+.right-column img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
-/* Desktop Styles */
-@media (min-width: 1024px) {
-    .container {
-        width: 60%;
-    }
-
-    h1 {
-        font-size: 3em;
-    }
-
-    p {
-        font-size: 1.2em;
-    }
-}
-
-/* Tablet Styles */
-@media (min-width: 768px) and (max-width: 1023px) {
+/* Tablet view */
+@media (max-width: 768px) {
     .container {
         flex-direction: column;
-        width: 80%;
     }
 
-    .left-column,
-    .right-column {
+    .left-column, .right-column {
         padding: 15px;
     }
-
-    h1 {
-        font-size: 2.5em;
-        text-align: center;
-    }
-
-    p {
-        font-size: 1.1em;
-        text-align: center;
-    }
-
-    img {
-        max-width: 80%;
-    }
 }
 
-/* Mobile Styles */
-@media (max-width: 767px) {
+/* Mobile view */
+@media (max-width: 480px) {
     .container {
         flex-direction: column;
-        width: 90%;
+    }
+
+    .left-column, .right-column {
+        padding: 10px;
     }
 
     .left-column {
         order: 1;
-        padding: 10px;
     }
 
     .right-column {
         order: 2;
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    h1 {
-        font-size: 2em;
-        text-align: center;
-    }
-
-    p {
-        font-size: 1em;
-        text-align: center;
-    }
-
-    img {
-        max-width: 100%;
     }
 }
